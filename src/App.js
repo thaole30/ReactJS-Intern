@@ -8,6 +8,10 @@ import Todos from './hooks/UseReducer/UseReducer';
 import UseMemo from './hooks/UseMemo/UseMemo';
 import UseCallback from './hooks/UseCallback/UseCallback.jsx';
 import Counter from './components/LifeCycle/Counter';
+import UseRef from './hooks/UseRef/UseRef';
+import UseRef2 from './hooks/UseRef/UseRef2';
+import ExampleTheme from './hooks/useContext/ExampleTheme';
+import ExampleMemo from './HOC/memo/ExampleMemo';
 
 
 export default class App extends Component {
@@ -26,6 +30,9 @@ export default class App extends Component {
   }
 
   render() {
+
+    // const [theme, setThem]
+
     return (
       <div className="App">
         {/* <Home/>
@@ -35,14 +42,22 @@ export default class App extends Component {
         {/* <Todos/> */}
         {/* <UseMemo/> */}
         {/* <UseCallback/> */}
+        {/* <UseRef/> */}
+        {/* <UseRef2/> */}
+        <ExampleMemo/>
+        {/* <ExampleTheme/> */}
+
+
   
         {/* life cycle */}
-        <button onClick={() => this.removeCounter()}>Remove counter</button>
+        {/* <button onClick={() => this.removeCounter()}>Remove counter</button>
         
         {
           this.state.showCounter && <Counter/>
-        }
+        } */}
         
+
+
       </div>
     );
   }

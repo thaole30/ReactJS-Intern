@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from 'react'
 
 const Wrap = () => {
+  console.log("wrapped render");
     const [isChecked, setIsChecked] = React.useState(false);
     const toggleChecked = useCallback(() =>{
         console.log("go to onclick");
