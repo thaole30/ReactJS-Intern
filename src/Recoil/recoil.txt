@@ -1,0 +1,7 @@
+-atoms: state gốc
+-selector: nhận đầu vào là 1 hoặc nhiều atom hoặc là selector khác
+-recoil-root:
+    +cung cấp context để share state
+    +bọc App
+
+-useRecoilState (gần giống useState): Returns a tuple where the first element is the value of state and the second element is a setter function that will update the value of the given state when called.

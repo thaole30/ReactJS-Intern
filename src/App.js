@@ -12,6 +12,7 @@ import UseRef from './hooks/UseRef/UseRef';
 import UseRef2 from './hooks/UseRef/UseRef2';
 import ExampleTheme from './hooks/useContext/ExampleTheme';
 import ExampleMemo from './HOC/memo/ExampleMemo';
+import ParentLogin from './hooks/ContextApi/ParentLogin';
 
 
 export default class App extends Component {
@@ -44,8 +45,11 @@ export default class App extends Component {
         {/* <UseCallback/> */}
         {/* <UseRef/> */}
         {/* <UseRef2/> */}
-        <ExampleMemo/>
+        {/* <ExampleMemo/> */}
         {/* <ExampleTheme/> */}
+
+        {/* Context api */}
+        <ParentLogin/>
 
 
   
