@@ -13,6 +13,13 @@ import UseRef2 from './hooks/UseRef/UseRef2';
 import ExampleTheme from './hooks/useContext/ExampleTheme';
 import ExampleMemo from './HOC/memo/ExampleMemo';
 import ParentLogin from './hooks/ContextApi/ParentLogin';
+import Parent from './HOC/exampleHOC/Parent';
+import UsersList from './HOC/example2/UsersList';
+import LazyLoading from './components/LazyLoading/LazyLoading';
+import UseRef3 from './hooks/UseRef/UseRef3';
+import { UseRef4 } from './hooks/UseRef/useRef4';
+import { UseRef5 } from './hooks/UseRef/UseRef5';
+
 
 
 export default class App extends Component {
@@ -45,11 +52,19 @@ export default class App extends Component {
         {/* <UseCallback/> */}
         {/* <UseRef/> */}
         {/* <UseRef2/> */}
+        {/* <UseRef3/> */}
+        {/* <UseRef4/> */}
+        {/* <UseRef5/> */}
+
         {/* <ExampleMemo/> */}
         {/* <ExampleTheme/> */}
 
         {/* Context api */}
-        <ParentLogin/>
+        {/* <ParentLogin/> */}
+
+        {/* ------HOC----- */}
+        <Parent/>
+        {/* <UsersList/> */}
 
 
   
@@ -60,7 +75,8 @@ export default class App extends Component {
           this.state.showCounter && <Counter/>
         } */}
         
-
+        {/* React lazy */}
+        {/* <LazyLoading/> */}
 
       </div>
     );
